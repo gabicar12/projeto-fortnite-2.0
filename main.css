@@ -27,7 +27,7 @@ header nav li {
     display: inline;
     margin-left: 40px;
     font-size: 24px;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
 
 header nav li a {
@@ -50,9 +50,9 @@ header .btn-baixar button {
     background-color: #FFFF00;
     color: #0F0F0F;
     text-align: center;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     border: none;
-    padding: 10px 40px;  
+    padding: 10px 20px;
     cursor: pointer;
 }
 
@@ -63,26 +63,25 @@ header .btn-baixar button:hover {
 
 /* SOBRE */
 section.about {
-  position: relative; 
-  padding: 70px 0;
-  color: #FFF;
-  background-image: url(images/bg-donuts.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
+    position: relative;
+    padding: 70px 0;
+    color: #FFF;
+    background-image: url(images/bg-donuts.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* Filtro preto com leve opacidade */
 section.about::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.55); 
-  z-index: 1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 1;
 }
 
-section.about > * {
-  position: relative;
-  z-index: 2;
+section.about>* {
+    position: relative;
+    z-index: 2;
 }
 
 section .container {
@@ -118,7 +117,8 @@ section p {
     margin-right: 50px;
 }
 
-.btn-about .btn-saiba, .btn-assista {
+.btn-about .btn-saiba,
+.btn-about .btn-assista {
     display: inline-block;
 }
 
@@ -127,9 +127,9 @@ section p {
     background-color: #FFFF00;
     color: #0F0F0F;
     text-align: center;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     border: none;
-    padding: 10px 40px;  
+    padding: 10px 40px;
     cursor: pointer;
     margin-top: 30px;
 }
@@ -146,7 +146,7 @@ section p {
     text-align: center;
     text-transform: uppercase;
     border: none;
-    padding: 10px 40px;  
+    padding: 10px 40px;
     cursor: pointer;
     margin-top: 30px;
     margin-left: 30px;
@@ -221,7 +221,8 @@ form button:hover {
     transition: .1s;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline-color: #FFFF00;
 }
 
@@ -255,7 +256,7 @@ input:focus, textarea:focus {
 }
 
 .contact {
-  position: relative;
+    position: relative;
 }
 
 .contact h4 {
@@ -275,17 +276,17 @@ input:focus, textarea:focus {
 }
 
 .img-pet {
-  position: absolute;
-  bottom: 0;          
-  right: 290px;        
-  width: 270px;       
-  max-width: none;    
+    position: absolute;
+    bottom: 0;
+    right: 290px;
+    width: 270px;
+    max-width: none;
 }
 
 /* FOOTER */
 footer {
     background-color: #0F0F0F;
-    padding: 16px 0;    
+    padding: 16px 0;
 }
 
 footer p {
@@ -296,7 +297,118 @@ footer p {
 }
 
 
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
 
+    header {
+        padding: 16px 0;
+    }
 
+    header .container {
+        display: block;
+        text-align: center;
+    }
 
+    header .logo {
+        margin-bottom: 24px;
+    }
 
+    header .menu {
+        margin-left: 0;
+        margin-bottom: 24px;
+    }
+
+    header nav li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+
+    section.about {
+        padding: 40px 0;
+        background-position: center;
+    }
+
+    section .container {
+        display: block;
+    }
+
+    .img-fortnite-springfield {
+        margin-right: 0;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    section h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    section p {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .brands-list li {
+        margin-right: 18px;
+    }
+
+    .brands-list li img {
+        height: 24px;
+    }
+
+    .btn-about .btn-saiba,
+    .btn-about .btn-assista,
+    .btn-about .btn-saiba a,
+    .btn-about .btn-assista a {
+        display: block;
+        width: 100%;
+    }
+
+    .btn-about .btn-saiba button,
+    .btn-about .btn-assista button {
+        width: 100%;
+        margin-left: 0;
+        font-size: 18px;
+        margin-top: 16px;
+    }
+
+    .contact-methods {
+        display: block;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%;
+    }
+
+    .social-links {
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
+
+    .contact-methods>div:nth-child(2) {
+        margin-top: 64px;
+    }
+
+    .contact-methods>div:last-child {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-pet {
+        position: static;
+        display: block;
+        margin-top: 40px;
+    }
+
+    section.contact {
+        padding-bottom: 0;
+    }
+}
